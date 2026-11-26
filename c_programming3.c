@@ -1,19 +1,15 @@
 #include<stdio.h>
-#include<math.h>
 
 int main ()
 {
-	int a=1;
-	int b=5;
-	int c=6;
+	double celcius=37;
+	double fahrenheit=98.0;
 	
-	int discriminent = b*b - 4*a*c;
+	fahrenheit=1.8*celcius+32;
+	celcius=(fahrenheit-32)/1.8;
 	
-	int root1=(-b+sqrt(discriminent))/2*a;
-	int root2=(-b-sqrt(discriminent))/2*a;
-	
-	printf("root1: %d\n",root1);
-	printf("root2: %d",root2);
+	printf("celcius  is %f\n",fahrenheit);
+	printf("fahrenheit  is %f\n",celcius);
 	
 	return 0;
-	
+}
